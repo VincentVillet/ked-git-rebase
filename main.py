@@ -3,7 +3,9 @@ def my_operation(input_nb):
 
 
 def load_data():
-    return 2
+    with open("./data.txt", "r") as file:
+        data = file.read()
+    return int(data)
 
 
 if __name__ == "__main__":
